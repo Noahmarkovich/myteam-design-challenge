@@ -1,0 +1,41 @@
+.footer{
+    background-color: #002529;
+    display: grid;
+    grid-template-columns: minmax(160px, 1fr) 1100px minmax(160px, 1fr);
+}
+.footer-content{
+    grid-column: 2;
+    padding: 45px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-address-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 460px;
+}
+.footer-content .logo-container{
+    flex-direction: column;
+    width: fit-content;
+    gap : 40px
+}
+.footer-content .logo-container nav{
+    display: flex;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+}
+
+.address{
+    line-height: 1.6;
+}
+.social-media-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.social-media{
+    text-align: right;
+}
+

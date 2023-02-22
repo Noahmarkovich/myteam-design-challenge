@@ -1,0 +1,30 @@
+
+.contact-btn{
+    font-size: 1.125rem;
+    font-weight: 600;
+    background : none;
+    border-radius: 2rem;
+    padding: 0.78rem 2rem;
+}
+
+.bottom{
+    align-self: end;
+}
+
+.right{
+    justify-self: end;
+}
+
+.mar-r15{
+    margin-right: 15px;
+}
+
+.light-white{
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.right-half{
+    position: relative;
+    right: 100px;
+}

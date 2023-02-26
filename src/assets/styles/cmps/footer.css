@@ -1,19 +1,23 @@
 .footer{
     background-color: #002529;
     display: grid;
-    grid-template-columns: minmax(160px, 1fr) 1100px minmax(160px, 1fr);
+    grid-template-columns: minmax(20px, 1fr) 330px minmax(20px, 1fr);
 }
+
 .footer-content{
     grid-column: 2;
     padding: 45px 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 .logo-address-container{
+    flex-direction: column;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 460px;
+    gap: 40px
 }
 .footer-content .logo-container{
     flex-direction: column;
@@ -28,14 +32,44 @@
 
 .address{
     line-height: 1.6;
+    text-align: center;
 }
 .social-media-container{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    gap: 20px;
+
+}
+.social-media{
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+.footer{
+    grid-template-columns: minmax(160px, 1fr) 1100px minmax(160px, 1fr);
+}
+.footer-content{
+    flex-direction: row;
+    align-items: none;
+    gap: 0;
+}
+.logo-address-container{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 460px;
+    gap: 0px
+}
+
+.address{
+    text-align: left;
+}
+.social-media-container{
+    justify-content: space-between;
+    gap: 40px
 
 }
 .social-media{
     text-align: right;
 }
 
+}

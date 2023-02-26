@@ -1,44 +1,84 @@
-
 .intro{
     display: grid;
-    grid-template-columns: minmax(160px, 1fr) 1100px minmax(160px, 1fr);
-}
-.intro-middle-section {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 140px;
-}
-.line-light-blue{
-    border-top: 4px solid #79C8C7;
-    width: 50px;
+    grid-template-columns: minmax(20px, 1fr) 330px minmax(20px, 1fr);
 }
 
+.intro-middle-section {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
 .best-talent{
-    font-size: 6.25rem;
+    font-size: 2.5rem;
     font-weight: 700;
     font-family: Livvic-bold;
-    width: 50%;
+    padding-bottom: 30px;
+}
+
+.longer-txt{
+    font-weight: 600;
+    padding-bottom: 80px;
+    line-height: 1.75; 
+    font-size: 0.9375rem;
+
 }
 .best-talent span{
     color: #F67E7E;
 }
 
-.longer-txt{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 38%;
-    font-size: 1.125rem;
-    font-weight: 600;
-    line-height: 1.75;
-   
+.shown-in-desktop{
+    display: none;
 }
+
 .bottom-right{
-    justify-self: flex-end;
-    /* justify-items: flex-end; */
-    align-self: end;
-    grid-column: 2;
+    grid-column: -1/1;
+    justify-self: center;
+    
 }
-/* .left-side-half{
-    grid-area: a;   
-} */
+
+
+@media screen and (min-width: 600px){
+    .intro{
+        grid-template-columns: minmax(160px, 1fr) 1100px minmax(160px, 1fr);
+    }
+    .intro-middle-section {
+        flex-direction: row;
+        margin-bottom: 140px;
+        text-align: left;
+    }
+    .line-light-blue{
+        border-top: 4px solid #79C8C7;
+        width: 50px;
+    }
+    
+    .best-talent{
+        font-size: 6.25rem;
+        width: 50%;
+        padding-bottom: 0;
+    }
+    .best-talent span{
+        color: #F67E7E;
+    }
+    
+    .longer-txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 38%;
+        font-size: 1.125rem;
+        padding-bottom: 0;
+       
+    }
+    .bottom-right{
+        justify-self: flex-end;
+        align-self: end;
+        grid-column: 2;
+    }
+    .shown-in-desktop{
+        display: block;
+    }
+
+}
+

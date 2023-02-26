@@ -1,7 +1,7 @@
 
 .list{
     display: grid;
-    grid-template-columns: minmax(160px, 1fr) 1100px minmax(160px, 1fr);
+    grid-template-columns: minmax(20px, 1fr) 330px minmax(20px, 1fr);
 }
 .list-main{
     grid-column: 2;
@@ -10,10 +10,9 @@
     padding: 140px 0;
 }
 .main-list h1{
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: Livvic-bold;
     text-align: center;
-    max-width: 85%;
     margin: auto;
     margin-bottom: 50px;
 }
@@ -23,22 +22,22 @@
 
 .team-list{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 45px
 }
 
 .team-member{
     text-align: center;
-    width: 350px;
 }
 .team-member p{
     position: relative;
     top: -20px;
     line-height: 1.5625;
-    font-size: 0.9375;
+    font-size: 0.9375rem;
 }
 .team-member h3{
     color: #79C8C7;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .avatar{
     border-radius: 50%;
@@ -49,3 +48,25 @@
 
 
 
+@media screen and (min-width: 600px) {
+.list{
+    grid-template-columns: minmax(160px, 1fr) 1100px minmax(160px, 1fr);
+}
+
+
+.main-list h1{
+    font-size: 3rem;
+    max-width: 85%;
+}
+
+.team-list{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px
+}
+
+.team-member{
+    width: 350px;
+}
+
+}

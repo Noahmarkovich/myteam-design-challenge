@@ -1,34 +1,54 @@
-
-.app-header{
+.app-header {
     margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
-    margin-bottom: 130px;
+    margin-bottom: 90px;
 }
-.logo-container{
+
+.logo-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 380px;
-    
-}
-.logo{
-    font-family: Livvic-bold;
-    font-size: 2rem;
-    font-weight: 800;
-}
-.nav-bar a{
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: white;
-}
-.nav-bar a:first-child{
-    margin-right: 2rem;
+
 }
 
-.app-header button{
-    color: white;
-    border: 2px solid white;
+.logo-container nav{
+    display: none;
+}
+
+
+.app-header button {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .app-header {
+        margin-bottom: 130px;
+    }
+
+    .logo-container nav{
+        display: block;
+    }
+    .hamburger{
+        display: none;
+    }
+
+    .nav-bar a {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: white;
+    }
+
+    .nav-bar a:first-child {
+        margin-right: 2rem;
+    }
+
+    .app-header button {
+        display: block;
+        color: white;
+        border: 2px solid white;
+    }
 }

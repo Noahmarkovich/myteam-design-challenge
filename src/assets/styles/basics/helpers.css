@@ -5,6 +5,7 @@
     background : none;
     border-radius: 2rem;
     padding: 0.78rem 2rem;
+    cursor: pointer;
 }
 
 .bottom{
@@ -27,4 +28,10 @@
 .right-half{
     position: relative;
     right: 100px;
+}
+
+.nav-bar a{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: white;
 }

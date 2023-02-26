@@ -1,19 +1,41 @@
 .contact{
     background-color: #F67E7E;
     display: grid;
+    grid-template-columns: minmax(20px, 1fr) 330px minmax(20px, 1fr);}
+
+.contact-container{
+    padding: 76px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 25px;  
+    margin-bottom: 20px; 
+}
+.contact-container h1{
+    color: black;
+    font-size: 2rem;
+    font-family: Livvic-bold; 
+    text-align: center;  
+}
+.contact-container .contact-btn{
+    border-color: black;
+}
+@media screen and (min-width: 600px) {
+.contact{
     grid-template-columns: 1fr 920px 1fr;
 }
 
 .contact-container{
     grid-column: 2;
     padding: 76px 0;
-    /* padding-top: 76px; */
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;   
+    gap: 0; 
+    margin-bottom: 0px; 
+       
 }
 .contact-container h1{
-    color: black;
     font-size: 3rem;
-    font-family: Livvic-bold;   
+    text-align: left;  
+}
 }
